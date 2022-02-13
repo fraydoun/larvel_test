@@ -34,6 +34,9 @@
                             @enderror
                             <button wire:click="save" class="mt-4 btn btn-primary"> ارسال </button>
                         </div>
+                        <div>   
+                            
+                        </div>
                     </div>                                        
                 </div>
                 
