@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "fb7bd170-2835-4329-9e4c-0892e22e6ce4",
+		"name": "zimaHome",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify number",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/verify",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"verify"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODgyODdiMjA0ZjY3NTQzODdmMjg3ZGQ0Mzg1NjBmNjliMzMzMGY4YTE3NjgxOGQ2NTg5ZmM2ODMzNjRjNjM4MmIwY2E1ZWE3ODUxYzNlYmIiLCJpYXQiOjE2Mjg1Mjk3NjIuMjA0NzE1MDEzNTA0MDI4MzIwMzEyNSwibmJmIjoxNjI4NTI5NzYyLjIwNDcxNjkyMDg1MjY2MTEzMjgxMjUsImV4cCI6MTY2MDA2NTc2Mi4yMDI2NTY5ODQzMjkyMjM2MzI4MTI1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.QCCW9oJTtLFDRG2G4XfPk3jDJO0n-4Z80jq2RV4mB8-lJ0B4fCJXDDGD6WGaszmCYoef-obPfGEvyWInJok6kI-Nd1psiAC3PBmFkBm0Kz540NS70ToxCImQK8lfZzqhZ5hM1lxy-fOceMMmCcXzPU2As1VKXOGZYq_FEJ8QkpnHKUz2_Eg7cNrYmBu2btmHs35AKbmllcDcYxm0Sp_f6rXY3fpvyy3X0cdZoUWmJOjEfZDujgjhPafG3gYkMwUYf_7OOyQZxMAnCA0SRCiucO_vs6vKpgdS_C0q8DZrF0IClD567NSXgAKGMx_6AcOWp8CIfJsvN8JtpFyQI2SYvmrutlyALHxxH_jyAFUkAp5aZp8roGPH3IbbQBmnaU4cN-5KncOuseD7BbQvEwdspHhatEl_CYkcHs9emFP23RIJS5-Lbpj6GV9DH5uBc80eIRRWRDuaNirg9fsqNQ4o79HIBpxCgNwuZEjShWgfp4ffV-PQ-Vk0zeYEfI0-v3gV83L3LTNcB2kp7C_2rIgMONLUqX3M7ZM-hK5lYsZ4DsumxLlkUKDyLrOHFanWcEi8dQpAtafFkAIByd5s-Rw1JhwGz9YBOOuQYW2kyA6bvWvr86PYO1E0P9Fr2-5gFEohyABUgvYdRrseYw6w7TUZEYHouHI9Q7Ysw8Na16NN5Y8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/v1/users/update",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								"update"
+							]
+						},
+						"description": "بروز رسانی اطلاعات کاربری \nتمام فیلد هایی که در دیتابیس وجود دارد به صورت اپشنال هستند که \nاگر ارسال بشوند همان فیلد اپدیت میشود"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "building",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "testdd",
+									"type": "text"
+								},
+								{
+									"key": "sheba",
+									"value": "789456123012365478954587",
+									"type": "text"
+								},
+								{
+									"key": "card_number",
+									"value": "1234567891234567",
+									"type": "text"
+								},
+								{
+									"key": "bank_number",
+									"value": "1234567891",
+									"type": "text"
+								},
+								{
+									"key": "name_owner_bank",
+									"value": "abbass",
+									"type": "text"
+								},
+								{
+									"key": "last_name_owner_bank",
+									"value": "jafari",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/v1/building/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"building",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "join to building or unit.",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/building/join",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"building",
+								"join"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My building",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/building/my-building",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"building",
+								"my-building"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "units",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "building_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "charge",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "day_charge",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "living_people",
+									"value": "4",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "count_parkings",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "number_floor",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "number_warehouse",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone_number",
+									"value": "09020838954",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/v1/unit/single-create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"unit",
+								"single-create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "info unit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/v1/unit/info",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"unit",
+								"info"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "blog.test/api"
+		},
+		{
+			"key": "token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWJkNzhlNTZjYzRkYmU5Yzk3YTk5ZjUyNTRhY2JhNmIxNjY5YWFkN2M4NTI4N2Q2NzBjOTk1ZDJmNGFkNjNmM2FiMzM1ZWFhNzcyZTIxM2UiLCJpYXQiOjE2Mjk0NDc4OTIuNzIwOTQxMDY2NzQxOTQzMzU5Mzc1LCJuYmYiOjE2Mjk0NDc4OTIuNzIwOTQyOTc0MDkwNTc2MTcxODc1LCJleHAiOjE2NjA5ODM4OTIuNzE4ODUyOTk2ODI2MTcxODc1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.EbJt17vnISnEfjWBW2Vgfa6tugKuJPtuDSNOJbVb9D-3z6j8-kfPKIF9DTEmfNvEJi4j-2ECauSLXZBwiwz5owlMlLh99hhJW8jau44FRZQIN6RPo8ZmcnyqXaiy6rUh-D3jg5Q6gl7UXlI5juAOmokM4rFsOafyeVeHgm4Y-nOIZ0EGqpxvx4JhD0KUobybwe0Fa1MdUWdXUIpfmIKHnUoITCtnPIWgrG8-e9D11etc0GeiIdtjwqyshN2s3UONkhZ7jILQxBiuKBO9DrIjKyp6amBiYqF3FrcOVq-moe3ciaQdlAIa-PBsXzu4JlnY1v9VJit4I5j_PScMcFXU-VjytGbjGvd-Jzv2ZMwaldqBVx5YuswyVoZcVl7ZuXza0UA4Ej04IrBrayv1AQYm-p3YgmQve8VZtPcsTN9fqSq2S9epUHcEgVsvsocgESSLxvcp0V7YshMYyhcZKMKYLQlDiRBVaN2BENiNKwMTiR7K47r6Tn5MSzKswyTTFGgPF9vG2JK2kU4DgXtSbtT9LDzyd_YD-9R057slpI4EU4tKhuJZeFnKI5ZDb0yYuaNugf899czojvhoBVwA1niIXb8Ye72KLj7O373UcpsgYICKAr-WErM9IkDK0gDCQlerEeAJotIhJHslSPTSrsfPc7Z5xedTSjb831idK8dOrSw"
+		}
+	]
+}

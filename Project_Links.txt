@@ -1,0 +1,14 @@
+github link-> https://github.com/AmirPirazad021/zimahome_backend
+
+
+Taskulu link-> https://taskulu.com/a/project/61a1d2d456ad66444769a2c8/tasks/61ff87f856ad666ef4a51164
+
+http://doc.zimahome.net/
+
+for logout
+{{-- <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+                                Logout
+                            </a>  
+                            <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form> --}}
